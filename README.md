@@ -7,7 +7,7 @@
 To install `AdvancedCalculator`, use npm:
 
 ```bash
-npm install advanced-calculator
+npm install advanced-calc
 ```
 
 # Usage
@@ -17,7 +17,7 @@ Here’s a quick guide on how to use the AdvancedCalculator class and its variou
 
 # importing
 ```
-const AdvancedCalculator = require('advanced-calculator');
+const AdvancedCalculator = require('advanced-calc');
 const calc = new AdvancedCalculator();
 ```
 
