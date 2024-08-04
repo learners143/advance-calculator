@@ -13,7 +13,7 @@ npm install advance-calc
 # Or 
 - If you want to use it in vanilla js import like This
 ```
-<script src="https://cdn.jsdelivr.net/npm/advance-calc@1.1.1/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/advance-calc@1.0.0/index.js"></script>
 ```
 
 # Usage
