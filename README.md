@@ -10,6 +10,12 @@ To install `AdvancedCalculator`, use npm:
 npm install advance-calc
 ```
 
+# Or 
+- If you want to use it in vanilla js import like This
+```
+<script src="https://cdn.jsdelivr.net/npm/advance-calc@1.1.1/index.js"></script>
+```
+
 # Usage
 Here’s a quick guide on how to use the AdvancedCalculator class and its various functions.
 
@@ -18,6 +24,8 @@ Here’s a quick guide on how to use the AdvancedCalculator class and its variou
 # importing
 ```
 const AdvancedCalculator = require('advance-calc');
+```
+```
 const calc = new AdvancedCalculator();
 ```
 
