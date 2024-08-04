@@ -8,21 +8,21 @@ class AdvancedCalculator {
 
   // Scientific functions with option to input angles in degrees
   sin(...angles) {
-    return angles.map(angle => Math.sin(this.toRadians(angle)));
+    return angles.map(angle => (Math.sin(this.toRadians(angle))).toFixed(3));
   }
 
   cos(...angles) {
-    return angles.map(angle => Math.cos(this.toRadians(angle)));
+    return angles.map(angle => (Math.cos(this.toRadians(angle))).toFixed(3));
   }
 
   tan(...angles) {
-    return angles.map(angle => Math.tan(this.toRadians(angle)));
+    return angles.map(angle => (Math.tan(this.toRadians(angle))).toFixed(3));
   }
   cot(...angles) {
     return angles.map(angle => {
       const tanValue = Math.tan(this.toRadians(angle));
       if (tanValue === 0) throw new Error('Cotangent undefined for this angle');
-      return 1 / tanValue;
+      return (1 / tanValue).toFixed(3);
     });
   }
 
@@ -30,7 +30,7 @@ class AdvancedCalculator {
     return angles.map(angle => {
       const cosValue = Math.cos(this.toRadians(angle));
       if (cosValue === 0) throw new Error('Secant undefined for this angle');
-      return 1 / cosValue;
+      return (1 / cosValue).toFixed(3);
     });
   }
 
@@ -38,7 +38,7 @@ class AdvancedCalculator {
     return angles.map(angle => {
       const sinValue = Math.sin(this.toRadians(angle));
       if (sinValue === 0) throw new Error('Cosecant undefined for this angle');
-      return 1 / sinValue;
+      return (1 / sinValue).toFixed(3);
     });
   }
 
@@ -57,8 +57,7 @@ class AdvancedCalculator {
   }
 
   subtract(...args) {
-    return args.slice(1).reduce((a, b) => a - b,
-      args[0]);
+    return args.slice(1).reduce((a, b) => a - b,args[0]);
   }
 
   multiply(...args) {
@@ -196,4 +195,9 @@ class AdvancedCalculator {
   }
 }
 
-module.exports = AdvancedCalculator;
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = AdvancedCalculator;
+} else {
+    window.AdvancedCalculator = AdvancedCalculator;
+}
