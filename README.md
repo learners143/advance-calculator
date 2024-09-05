@@ -24,8 +24,6 @@ Here’s a quick guide on how to use the AdvancedCalculator class and its variou
 # importing
 ```
 const AdvancedCalculator = require('advance-calc');
-```
-```
 const calc = new AdvancedCalculator();
 ```
 
